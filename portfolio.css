@@ -1,0 +1,351 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 60px 100px 0 100px;
+}
+
+/* Nav Section */
+
+nav ul,
+.main-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+body {
+  background-color: #5f9ea0;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  transition: 0.6s;
+  color: #fff;
+  padding: 20px 100px;
+  z-index: 1;
+}
+
+nav.sticky{
+  padding: 5px 100px;
+  background: #fff;
+
+}
+
+nav .brand{
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative;
+  list-style: none;
+}
+
+nav ul li a{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color:#fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.6s;
+}
+
+nav.sticky, 
+nav.sticky ul li a{
+  color: #000;
+
+}
+
+.active{
+  text-decoration: underline;
+  color: #91ffd7;
+}
+
+header h1 {
+  color: #fff;
+}
+
+.text p {
+  color: #000000;
+}
+
+header a {
+  color: #fff;
+}
+
+li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  font-size: .9rem;
+  text-transform: uppercase;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+
+.main-info-section {
+  height: calc(100vh - 81.6px);
+}
+
+.text {
+  margin-top: 120px;
+}
+
+.text h1 {
+  color: #fff;
+  font-size: 3rem;
+  cursor: context-menu;
+}
+
+.text span {
+  display: inline-block;
+}
+
+span:hover {
+  color: #000000;
+  transition: all .5s;
+}
+
+span.name {
+  color: #000000;
+}
+
+span.m-left {
+  margin-left: -10px;
+}
+
+.text p {
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: 1rem;
+}
+
+.text a {
+  padding: 12px 25px;
+  background-color: none;
+  border: 3px solid #fff;
+  color: #fff;
+  font-size: .8rem;
+  letter-spacing: 2px;
+  position: relative;
+  top: 80px;
+  overflow: hidden;
+  transition: .5s;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.text a:hover {
+  color: #fff;
+}
+
+.text a::before {
+  content: '';
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: .5s;
+}
+
+.text a:hover::before { 
+  height: 100%;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 450px;
+  margin-top: 50px;
+}
+
+/* Hobbies Section */
+
+.hobbies {
+  height: 100vh;
+  margin-top: 100px;
+  
+}
+
+.hobbies h1 {
+  font-size: 9rem;
+  text-align: center;
+  z-index: 0;
+  opacity: .8;
+}
+
+.horizontal-list{
+  list-style: none;
+  font-size: 150px;
+  padding-left: 0px;
+  margin: 180px;
+}
+
+.horizontal-list li{
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+}
+
+.horizontal-list li a{
+  color: white;
+  text-decoration: none;
+}
+
+.horizontal-list li p{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.social-icons li a i {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+/* SKILLS SECTION */
+
+.skills {
+  height: 100vh;
+}
+
+.skills-display {
+  width: 75%;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-left: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skill-progress {
+  width: 11rem;
+  height: 2.2rem;
+  background-color: lightgrey;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+  margin: 80px;
+  overflow: hidden;
+}
+
+.skill-progress > div {
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+  color: white;
+  font-size: 1rem;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.skills h1 {
+  text-align: center;
+  font-size: 9rem;
+  opacity: .9;
+  margin-bottom: 69px;
+}
+
+/* Common Margin Classes */
+
+.m0 {
+  margin: 0;
+}
+
+.mb75px {
+  margin-bottom: 75px;
+}
+
+.mb50px {
+  margin-bottom: 50px;
+}
+
+/*common color classes */
+
+.text-highlight {
+  color: #2857a4;
+  font-weight: 600;
+
+}
+
+/* setting background-color */
+
+.m-blue {
+  color: #2857a4;
+}
+
+.mb-blue {
+  background-color: #2857a4;
+}
+
+.mb-orange {
+  background-color: #ec4d1c;
+}
+
+.mb-teal {
+  background-color: #0b8176;
+}
+
+.mb-light-purple {
+  background-color: #93738c;
+}
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+  height: inherit;
+  width: 85%;
+}
+
+.eighty-percent {
+  height: inherit;
+  width: 80%;
+}
+
+.fifty-percent {
+  height: inherit;
+  width: 50%;
+}
